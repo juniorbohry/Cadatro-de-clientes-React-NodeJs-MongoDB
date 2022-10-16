@@ -1,0 +1,15 @@
+.cadastro_container {
+    background-color: #EFEFEF ;
+    display: flex;
+    flex-direction: column;
+    min-height: 580px;
+}
+
+.cadastro_container h1 {
+    padding: .3em 0 .3em 0 ;
+    align-items: center;
+}
+
+.formulario {
+    width: 100%;
+}

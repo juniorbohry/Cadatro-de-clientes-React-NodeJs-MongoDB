@@ -1,0 +1,24 @@
+.navbar {
+    background-color: #323835;
+}
+
+.lista {
+    list-style: none;
+    display: flex; 
+}
+
+.item a:hover{
+    background-color: #DB995A ;
+    color: #323835;  
+}
+
+.item a {
+    text-decoration: none;
+    color: #DB995A;
+    font-weight: bold;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    width: 450px;
+    justify-content: center;   
+}
