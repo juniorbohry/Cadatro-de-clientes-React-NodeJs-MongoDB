@@ -66,7 +66,7 @@ function Cadastro() {
                 />
 
                 <Input 
-                    type="text" 
+                    type="date" 
                     text="Data de nascimento:" 
                     name="dataNacimento" 
                     placeholder="Insira a data de nascimneto"
@@ -75,7 +75,7 @@ function Cadastro() {
                 />
 
                 <Input 
-                    type="text" 
+                    type="tel" 
                     text="Telefone:" 
                     name="telefone" 
                     placeholder="Insira o telefone"
