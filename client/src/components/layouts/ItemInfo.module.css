@@ -16,6 +16,7 @@
 
 .dados_pessoais, .dados_endereco, .dados button{
     margin: 0;
+    list-style: none;
 }
 
 .dados_pessoais span, .dados_endereco span {
@@ -23,7 +24,6 @@
 }
 
 .dados_pessoais p, .dados_endereco p {
-    padding: .25em 0 .25em 0;
     color: #323835
 }
 
@@ -47,4 +47,35 @@
 
 .dados button svg {
     margin: 0 .5em 0 0;
+}
+
+.item {
+    padding: .3em 0em;
+}
+.item p{
+    display: inline;
+    padding-right: .5em;
+}
+
+.item p:nth-child(1){
+    font-weight: bold;
+}
+
+
+
+@media(max-width: 630px){
+    .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .item p {
+        margin: 0;
+    }
+
+    .item p:nth-child(1){
+        font-weight: 900;
+    }
+
 }

@@ -1,24 +1,68 @@
 .navbar {
-    background-color: #323835;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    width: 65vw; 
 }
 
 .lista {
     list-style: none;
     display: flex; 
+    margin: 0;
+    justify-content: space-around;
+    flex-grow: 1;
+    height: 100%;
+    align-items: center;
+    
 }
 
-.item a:hover{
-    background-color: #DB995A ;
-    color: #323835;  
+.item {
+    margin: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .item a {
     text-decoration: none;
-    color: #DB995A;
     font-weight: bold;
-    height: 10vh;
+    width: 100%;
+    height: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    width: 450px;
-    justify-content: center;   
+    transition: all .1s linear;
+    font-size: 1.2em;
+}
+
+
+.item a:hover{
+    font-size: 1.4em; 
+}
+
+.ativado {
+    background-color: #DB995A ;
+    color: #323835;
+}
+
+.desativado {
+    background-color: #323835 ;
+    color: #DB995A;
+}
+
+
+
+@media(max-width: 630px){
+
+        .navbar {
+            width: 100vw;
+        }
+
+        .item a{
+            font-size: 1.4em;
+        }
+
 }

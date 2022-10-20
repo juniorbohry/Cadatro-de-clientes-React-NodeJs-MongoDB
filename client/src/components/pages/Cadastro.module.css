@@ -3,13 +3,27 @@
     display: flex;
     flex-direction: column;
     min-height: 580px;
+    width: 65vw;
+    padding: 0em .5em 0em .5em;
+    justify-content: center;
 }
 
 .cadastro_container h1 {
-    padding: .3em 0 .3em 0 ;
     align-items: center;
+    padding: 0 0 .3em 0 ;
 }
 
 .formulario {
     width: 100%;
+}
+
+@media(max-width: 630px){
+
+    .cadastro_container {
+        min-height: calc(100vh - 10vh);
+        max-width: auto;
+        min-width: 100vw;
+        padding: 1em .5em 1em .5em;
+    }
+    
 }

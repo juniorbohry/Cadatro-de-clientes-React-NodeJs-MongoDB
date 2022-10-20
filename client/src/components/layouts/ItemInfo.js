@@ -12,45 +12,56 @@ function ItemInfo({id, nome, email, nascimento, telefone, idade, cpf, pais, esta
             <h2>Nome: {nome}</h2>  
 
             <div className={styles.dados}>
-                <div className={styles.dados_pessoais}>
-                    <p>
-                        <span>Email:</span> {email}
-                    </p>
+                <ul className={styles.dados_pessoais}>
+                    <li className={styles.item}>
+                        <p>Email:</p>
+                        <p>{email}</p>
+                    </li>
+                    
+                    <li className={styles.item}>
+                        <p>Nascimento:</p>
+                        <p>{nascimento}</p>
+                    </li>
+                    
+                    <li className={styles.item}>
+                        <p>Telefone:</p>
+                        <p>{telefone}</p>
+                    </li>
+                    
+                    <li className={styles.item}>
+                        <p>Idade:</p>
+                        <p>{idade}</p>
+                    </li>
+                    
+                    <li className={styles.item}>
+                        <p>CPF:</p>
+                        <p>{cpf}</p>
+                    </li>
+                    
+                </ul>
 
-                    <p>
-                        <span>Nascimento:</span> {nascimento}
-                    </p>
-
-                    <p>
-                        <span>Telefone:</span> {telefone}
-                    </p>
-
-                    <p>
-                        <span>Idade:</span> {idade}
-                    </p>
-
-                    <p>
-                        <span>CPF:</span> {cpf}
-                    </p>
-                </div>
-
-                <div className={styles.dados_endereco}>
-                    <p>
-                        <span>País:</span> {pais}
-                    </p>
-
-                    <p>
-                        <span>Estado:</span> {estado}
-                    </p>
-
-                    <p>
-                        <span>Cidade:</span> {cidade}
-                    </p>
-
-                    <p>
-                        <span>Bairro:</span> {bairro}
-                    </p>
-                </div>
+                <ul className={styles.dados_endereco}>
+                    <li className={styles.item}>
+                        <p>País:</p>
+                        <p>{pais}</p>
+                    </li>
+                    
+                    <li className={styles.item}>
+                        <p>Estado:</p>
+                        <p>{estado}</p>
+                    </li>
+                    
+                    <li className={styles.item}>
+                        <p>Cidade:</p>
+                        <p>{cidade}</p>
+                    </li>
+                    
+                    <li className={styles.item}>
+                        <p>Bairro:</p>
+                        <p>{bairro}</p>
+                    </li>
+                    
+                </ul>
 
                 <button onClick={remover}>
                     <BsFillTrashFill />Excluir

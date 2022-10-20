@@ -20,3 +20,20 @@
 .input_container input::placeholder {
     color: #7B7B7B;
 }
+
+@media(max-width: 630px){
+
+    .input_container{
+        flex-direction: column;
+    }
+
+    .input_container input {
+        width: 90vw;
+    }
+
+    .input_container label {
+        width: 90vw;
+        margin-bottom: .1em;
+    }  
+    
+}

@@ -1,4 +1,17 @@
 .cliente_Container {
     background-color: #EFEFEF ;
     min-height: 580px;
+    max-height: 580px;
+    overflow-y: auto;
+    width: 65vw;
+    
+}
+
+@media(max-width: 630px){
+    .cliente_Container {
+        min-height: 100vh;
+        max-height: none;
+        overflow-y: none;
+        width: 100vw;
+    }
 }

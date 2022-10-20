@@ -10,10 +10,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .1s linear;
 }
 
 .botao:hover{
     background-color: #DB995A ;
     color: #323835;
     cursor: pointer;
+    font-size: 1.2em;
 }
