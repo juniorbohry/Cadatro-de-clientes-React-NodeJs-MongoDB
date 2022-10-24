@@ -7,7 +7,7 @@ function Cliente() {
     const [listaClientes, setListaClientes] = useState([])
 
     useEffect(() => {
-        axios.get('/cliente')
+        axios.get('/apicliente')
         .then((resp) => {
             const data = resp.data
             setListaClientes(data)
@@ -15,7 +15,7 @@ function Cliente() {
     }, [])
 
     function removerCliente(id) {
-        axios.delete(`/cliente/${id}`)
+        axios.delete(`/apicliente/${id}`)
         .then(() => {
             alert('Cliente removido com sucesso!')
             setListaClientes(listaClientes.filter((cliente) => cliente._id !== id))

@@ -10,7 +10,7 @@ function Cadastro() {
     const [cliente, setCliente] = useState({})
 
     function createPost(cliente) {
-        axios.post('/cliente', {
+        axios.post('/apicliente', {
             nome: cliente.nome ,
             email:cliente.email ,
             dataNacimento: cliente.dataNacimento,
