@@ -5,10 +5,10 @@ import axios from 'axios'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-function Cadastro() {
+function Cadastro({text, novoCadastro}) {
     const navigate = useNavigate()
     const [cliente, setCliente] = useState({})
-
+    
     function createPost(cliente) {
         axios.post('/apicliente', {
             nome: cliente.nome ,
@@ -44,7 +44,7 @@ function Cadastro() {
 
     return(
         <div className={styles.cadastro_container}>
-            <h1>Cadastro de clientes</h1>
+            <h1>{text}</h1>
 
             <form onSubmit={submit} className={styles.formulario}>
                 <Input 

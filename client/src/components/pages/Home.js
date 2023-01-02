@@ -8,7 +8,6 @@ function Home() {
             <div className={styles.conteudo}>
                 <h1>Bem-vindo ao sistema de cadastro</h1>
                 <p>Clique no botão abaixo para cadastrar um novo cliente </p>
-                {/* <Link to="/cadastro">Cadastrar</Link> */}
             </div>
 
             <Link className={styles.btn} to="/cadastro">Cadastrar</Link>

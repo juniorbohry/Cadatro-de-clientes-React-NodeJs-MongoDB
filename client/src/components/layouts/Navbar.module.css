@@ -4,7 +4,6 @@
     align-items: center;
     width: 65vw; 
 }
-
 .lista {
     list-style: none;
     display: flex; 
@@ -15,7 +14,6 @@
     align-items: center;
     
 }
-
 .item {
     margin: 0;
     width: 50%;
@@ -25,7 +23,6 @@
     align-items: center;
 
 }
-
 .item a {
     text-decoration: none;
     font-weight: bold;
@@ -37,32 +34,23 @@
     transition: all .1s linear;
     font-size: 1.2em;
 }
-
-
 .item a:hover{
     font-size: 1.4em; 
 }
-
 .ativado {
     background-color: #DB995A ;
     color: #323835;
 }
-
 .desativado {
     background-color: #323835 ;
     color: #DB995A;
 }
 
-
-
 @media(max-width: 630px){
-
-        .navbar {
-            width: 100vw;
-        }
-
-        .item a{
-            font-size: 1.4em;
-        }
-
+    .navbar {
+        width: 100vw;
+    }
+    .item a{
+        font-size: 1.4em;
+    }
 }

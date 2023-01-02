@@ -1,11 +1,15 @@
 import styles from './ItemInfo.module.css'
-import { BsFillTrashFill } from 'react-icons/bs'
+import { BsFillTrashFill, BsPencil } from 'react-icons/bs'
+import { Link } from 'react-router-dom'
 
 function ItemInfo({id, nome, email, nascimento, telefone, idade, cpf, pais, estado, cidade, bairro, handleRemove}) {
+
+
     const remover = (e) => {
         e.preventDefault()
         handleRemove(id)
     }
+
        
     return(
         <div className={styles.item_infor_container}>  
@@ -63,9 +67,18 @@ function ItemInfo({id, nome, email, nascimento, telefone, idade, cpf, pais, esta
                     
                 </ul>
 
-                <button onClick={remover}>
-                    <BsFillTrashFill />Excluir
-                </button>
+                <div className={styles.botoes}>
+                    <button onClick={remover}>
+                        <BsFillTrashFill />Excluir
+                    </button>
+
+                    <Link to={`/cadastro/edit/${id}`}>
+                        <BsPencil /> Editar
+                    </Link>
+
+                </div>
+                
+                
             </div>
         </div>  
     )

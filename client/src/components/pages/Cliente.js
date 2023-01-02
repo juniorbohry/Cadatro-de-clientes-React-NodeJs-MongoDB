@@ -22,7 +22,7 @@ function Cliente() {
         })
         .catch((err) => console.log(err))
     }
-    
+
     return(
         <div className={styles.cliente_Container}>
             {listaClientes.map((item) => (
