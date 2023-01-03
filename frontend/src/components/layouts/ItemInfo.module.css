@@ -1,0 +1,73 @@
+.item_infor_container{
+    padding: 1em .5em 1em .5em;
+    border-bottom: solid #323835;
+    background-color: #EFEFEF;
+}
+.item_infor_container h2 {
+    display: inline;
+    padding-bottom: 1em;
+}
+.dados {
+    display: flex;
+    justify-content: space-between; 
+}
+.dados_pessoais, .dados_endereco,.botoes button{
+    margin: 0;
+    list-style: none;
+}
+.dados_pessoais span, .dados_endereco span {
+    font-weight: bold;
+}
+.dados_pessoais p, .dados_endereco p {
+    color: #323835
+}
+.botoes {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.botoes button, .botoes a {
+    background-color: #323835;
+    color: #DB995A;
+    font-size: 0.9em;
+    height: 40px;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    margin: 1em 0;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+.botoes button:hover, .botoes a:hover  {
+    background-color: #DB995A ;
+    color: #323835;
+}
+.botoes button svg, .botoes a svg {
+    margin: 0 .5em 0 0;
+}
+.item {
+    padding: .3em 0em;
+}
+.item p{
+    display: inline;
+    padding-right: .5em;
+}
+.item p:nth-child(1){
+    font-weight: bold;
+}
+
+@media(max-width: 630px){
+    .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .item p {
+        margin: 0;
+    }
+    .item p:nth-child(1){
+        font-weight: 900;
+    }
+}

@@ -1,0 +1,43 @@
+.input_container{
+    display: flex;
+    margin-bottom: .8em;   
+}
+
+.input_container label {
+    display: flex;
+    margin-bottom: .6em;
+    font-weight: bold;
+    width: 200px;     
+}
+
+.input_container input{
+    padding: .7em;
+    border-radius: 0;
+    border: none;
+    width: 500px;
+}
+
+.input_container input::placeholder {
+    color: #7B7B7B;
+}
+
+@media(max-width: 630px){
+
+    .input_container{
+        flex-direction: column;
+    }
+
+    .input_container input {
+        width: 90vw;
+    }
+
+    .input_container label {
+        width: 90vw;
+        margin-bottom: .1em;
+    }  
+
+    .input_container input[type=date]{
+        background-color: rgb(255, 255, 255);
+    }
+    
+}
