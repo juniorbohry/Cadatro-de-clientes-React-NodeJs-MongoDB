@@ -3,9 +3,10 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 import ItemInfo from '../layouts/ItemInfo'
 
+
 function Cliente() {
     const [listaClientes, setListaClientes] = useState([])
-
+    
     useEffect(() => {
         axios.get('/apicliente')
         .then((resp) => {

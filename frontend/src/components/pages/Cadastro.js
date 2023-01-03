@@ -2,26 +2,24 @@ import styles from './Cadastro.module.css'
 import Input from '../layouts/formulario/Input'
 import Submit from '../layouts/formulario/Submit'
 import axios from 'axios'
-import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import { useNavigate, useParams } from 'react-router-dom'
 
 function Cadastro({text, novoCadastro}) {
     const navigate = useNavigate()
     const [cliente, setCliente] = useState({})
+    const {id} = useParams()
+
+    useEffect(() => {
+        axios.get(`/apicliente/${id}`)
+        .then((resp) => {
+            const data = resp.data
+            setCliente(data)
+        })
+    }, [id])
     
     function createPost(cliente) {
-        axios.post('/apicliente', {
-            nome: cliente.nome ,
-            email:cliente.email ,
-            dataNacimento: cliente.dataNacimento,
-            telefone: cliente.telefone ,
-            cpf: cliente.cpf,
-            idade: cliente.idade,
-            Pais: cliente.Pais ,
-            estado: cliente.estado ,
-            cidade: cliente.cidade,
-            bairro: cliente.bairro
-        })
+        axios.post('/apicliente/registrar', cliente)
         .then(() => {
             console.log('post realizado!')
             alert('Cliente inserido no bando de dados com sucesso!')
@@ -32,14 +30,28 @@ function Cadastro({text, novoCadastro}) {
         })
     }
 
-    const submit = (e) => {
-        e.preventDefault()
-        createPost(cliente)
+    function atualizarCliente(cliente) {
+        axios.patch(`/apicliente/${id}`, cliente)
+        .then(() => {
+            alert('Cliente atualizado com sucesso!')
+            navigate('/cliente')
+        })
+        .catch((err) => console.log(err))
     }
 
     function handleChange(e) {
         setCliente({...cliente, [e.target.name]: e.target.value})
         console.log(cliente)
+    }
+
+    const submit = (e) => {
+        if(novoCadastro) {
+            e.preventDefault()
+            createPost(cliente)
+        } else {
+            e.preventDefault()
+            atualizarCliente(cliente)
+        }
     }
 
     return(

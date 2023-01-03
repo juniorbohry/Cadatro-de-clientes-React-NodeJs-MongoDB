@@ -11,8 +11,8 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Home />}/>
           <Route path='/cliente' element={<Cliente />} />
-          <Route path='/cadastro' element={<Cadastro text="Cadastro de novo cliente"/>} />
-          <Route path='/cadastro/edit/:id' element={<Cadastro text="Atualização cadastral"/>} />
+          <Route path='/cadastro' element={<Cadastro text="Cadastro de novo cliente" novoCadastro={true}/>} />
+          <Route path='/cadastro/edit/:id' element={<Cadastro text="Atualização cadastral" novoCadastro={false}/>} />
         </Routes>
     </Router>
   );
