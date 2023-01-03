@@ -17,14 +17,6 @@ const ClienteRoutes = require('./routes/ClienteRoutes')
 app.use('/apicliente', ClienteRoutes)
 
 
-// conn
-// .sync()
-//     // .sync({force: true})
-// .then(() => {
-//     app.listen(PORT)
-// })
-// .catch((err) => console.log(err))
-
 app.listen(PORT, () => {
     console.log(`Servidor rodando na porta: ${PORT}`);
 })
