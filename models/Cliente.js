@@ -1,4 +1,3 @@
-// import mongoose from "mongoose";
 const mongoose = require('mongoose')
 
 const Cliente = mongoose.model('Cliente', {
@@ -14,5 +13,4 @@ const Cliente = mongoose.model('Cliente', {
     bairro: String,
 })
 
-// export default Cliente
 module.exports = Cliente
