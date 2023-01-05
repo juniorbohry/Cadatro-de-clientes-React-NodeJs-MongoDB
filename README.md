@@ -6,7 +6,7 @@ https://documenter.getpostman.com/view/20471212/2s8Z72WXPf
 
 # Layouts
 ## Home
-![home](https://github.com/juniorbohry/Assets/blob/main/gerenciamento%20de%20clientes/home.jpg)
+![home](https://github.com/juniorbohry/Assets/blob/main/gerenciamento%20de%20clientes/home1.png)
 
 ## Cadastro de novos clientes
 ![cadastro](https://github.com/juniorbohry/Assets/blob/main/gerenciamento%20de%20clientes/cadastro.png)
