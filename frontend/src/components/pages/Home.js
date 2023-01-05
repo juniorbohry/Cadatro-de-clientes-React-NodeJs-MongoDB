@@ -6,7 +6,7 @@ function Home() {
     return(
         <div className={styles.home_container}>
             <div className={styles.conteudo}>
-                <h1>Bem-vindo ao sistema de cadastro</h1>
+                <h1>Bem-vindo ao gerenciador de clientes</h1>
                 <p>Clique no botão abaixo para cadastrar um novo cliente </p>
             </div>
 
