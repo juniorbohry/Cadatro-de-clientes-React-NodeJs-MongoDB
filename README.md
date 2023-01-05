@@ -32,7 +32,7 @@ https://documenter.getpostman.com/view/20471212/2s8Z72WXPf
 ## Implantação em produção
 - Banco de dados: MongoDB
 
-# execução do projeto
+# Execução do projeto
 ## Backend
 - npm start:
 Executa a api no diretório raiz da pasta "backend".
